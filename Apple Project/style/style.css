@@ -1,0 +1,478 @@
+:root {
+    --header-bg-color: rgb(51,51,51);
+    --banner-bg-color: rgb(227,65,64);
+    --btn-header-color: rgb(92,92,92);
+    --text-main-color:rgb(29,29,31);
+    --font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --bg-color-holidays:rgb(234,242,252);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:600;
+    src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.ttf") format("truetype");
+    /* (C) 2015 Apple Inc. All rights reserved.*/
+  }
+
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/*HEADER INICIO*/
+.container-navbar{
+    background-color: var(--header-bg-color);
+    height: 44px;
+}
+
+.container-navbar__ul--flex{
+    display: flex;
+    justify-content:center;
+    
+}
+.container-navbar__ul--flex li{
+    font-size: 1.8rem;
+    list-style: none;
+    margin: 5px 0 0 40px ;
+    padding: 0 0 5px;
+    
+}
+
+.container-navbar__ul--flex li a{
+    text-decoration: none;
+    color:#dddddd
+    
+}
+
+.container-navbar__ul--flex li a:hover{
+    color:#F2F2F2; 
+    
+}
+
+.icon-navbar{
+    width: 20px;
+    height: auto;
+    margin: 5px 0 0;
+}
+
+
+/*HEADER CIERRE*/
+/*BANNER INICIO*/
+.banner-red{
+    display: flex;
+    justify-content: center;
+    background-color: var(--banner-bg-color);
+    height: 44px;
+}
+
+.banner-red__text{
+    font-size: 1.3rem;
+    margin: 10px 0 0;
+    color: #F2F2F2;
+    
+}
+/*BANNER CIERRE*/
+
+/*INICIO MAIN*/
+.container-main{
+    background-color:rgb(251,251,253);
+    height: 100vh;
+}
+.container-main__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-main-color);
+    padding: 40px 0 0;
+    
+    
+}
+
+.container-main__text > h1{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.container-main__text > h3{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.container-main__text > span{
+    color: rgb(33,123,208);
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 0.65em;
+}
+.container-figure{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 0 ;
+}
+
+.container-figure img{
+    width: 100%;
+    height: auto;
+   
+}
+
+
+/*INICIO CONTAINER HOLIDAYS*/
+.container-holidays{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color-holidays);
+    height: 100vh;
+    margin: 15px 0 0;
+}
+
+.apple-logo{
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/img-header/logo-apple-holidays.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 35px 0 0;
+}
+
+.container-holidays > h2{
+    margin: 20px 0 0;
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: var(--font-family)
+}
+
+.container-holidays > a {
+    color: rgb(33,123,208);
+    text-decoration: none;
+    margin: 9px 0 0;
+    display: inline-block;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: var(--font-family)
+
+}
+
+.container-holidays > a:hover{
+    text-decoration: underline;
+}
+.container-holidays__imgflex{
+    display: flex;
+    align-items: center;
+}
+
+.container-holidays__imgflex img{
+    width: 370px;
+    height: auto;
+    margin: 17px 0 0 ;
+}
+/*CIERRE CONTAINER HOLIDAYS*/
+
+/*INICIO CONTAINER IPHONE*/
+.container-iphone{
+    height: 100vh;
+}
+.container-iphone__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    background-image: url("../img/img-header/hero_iphone_13pro__dhnsegysa42u_largetall_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.container-iphone__flex > h2{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: var(--font-family);
+    margin: 45px 0 0;
+}
+
+.container-iphone__flex > h3{
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: var(--font-family);
+    margin-top: 6px;
+    
+}
+
+.container-iphone__flex div a{
+    display: inline-block;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: var(--font-family);
+    margin: 10px 0 0 10px;
+    text-decoration: none;
+    color: rgb(33,123,208);
+}
+
+.container-iphone__flex div a:hover{
+    text-decoration: underline;
+}
+
+/*CIERRE CONTAINER IPHONE*/
+/*SECCION FOOTER INICIO*/
+.container-footer{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-footer > div{
+    width: 45%;
+    height: 580px;
+}
+
+.container-footer__firstchild{
+    background-image: url("../img/img-header/tile_iphone_13__d9w82q7fwceq_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container-footer__firstchild h4{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: var(--font-family);
+    color: var(--bg-color-holidays);
+}
+
+.container-footer__firstchild h5{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: var(--font-family);
+    margin-top: 4px;
+    color: rgb(240,183,223);
+}
+
+.container-footer--a a{
+    display: inline-block;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: var(--font-family);
+    margin: 10px 0 0 10px;
+    text-decoration: none;
+    color: rgb(33,123,208);
+}
+
+.container-footer--a a:hover{
+    text-decoration: underline;
+}
+.container-footer__secondchild{
+    background-image: url("../img/img-header/tile_airpods__fuv6vgn42y2q_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    margin-bottom: 15px;
+}
+
+.container-footer__secondchild h4{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: var(--font-family);
+    
+}
+
+.container-footer__secondchild h5{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: var(--font-family);
+    margin-top: 4px;
+    
+}
+
+.container-footer__thirdchild{
+    background-image: url("../img/img-header/tile_homepod_mini__b73w4z3ljymu_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 15px;
+}
+
+.container-footer__thirdchild h4{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: var(--font-family);
+    margin-top: 53px;
+}
+.container-footer__fourchild{
+    background-image: url("../img/img-header/tile_watch__e9n11b6m6yq2_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 15px;
+
+}
+.container-footer__fourchild > span:first-child{
+    margin-top: 31px;
+    color: #bf4800;
+    font-size: 14px;
+    line-height: 1.33337;
+    font-weight: 400;
+    font-family: var(--font-family);
+    letter-spacing: -.01em;
+
+}
+
+.container-footer__fourchild h4{
+    background-image: url("../img/img-header/tile_watch_logo_lte__h7snssb7mqq2_large_2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 75px;
+}
+
+.container-footer__fourchild h5{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: var(--font-family);
+    margin-top: 4px;
+    
+}
+.container-footer__fivechild{
+    background-image: url("../img/img-header/tile__cauwwcyyn9hy_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 15px;
+
+}
+
+.container-footer__fivechild h4{
+    background-image: url("../img/img-header/logo__dcojfwkzna2q_large_2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 75px;
+}
+
+.container-footer__fivechild h5{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: var(--font-family);
+    margin-top: 4px;
+    text-align: center;
+    
+}
+
+.container-footer__sixchild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/img-header/tile_harriet__b4qqaek9wjqq_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-footer__sixchild h4{
+    background-image: url("../img/img-header/logo__dcojfwkzna2q_large_2x\ \(1\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 15px;
+    width: 84px;
+    height: 33px;
+}
+
+.container-footer__sixchild h5{
+    background-image: url("../img/img-header/logo_tile_harriet__dristyjhbm2q_large_2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 15px;
+    width: 327px;
+    height: 132px;
+}
+
+.container-footer__sixchild h6{
+    background-image: url("../img/img-header/subhead_tile_harriet__f2ogbe6vdzyy_large_2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 15px;
+    width: 183px;
+    height: 18px;
+}
+/*CIERRE SECCION FOOTER*/
+
+
+
+
+
+
+
+/*CIERRE MAIN*/
